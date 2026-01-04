@@ -1,0 +1,254 @@
+%-------------------------
+% Resume in Latex
+% Author : Abhinav Gupta
+% Based off of: https://github.com/jakegut/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+% TAG: header
+\begin{center}
+    \textbf{\Huge \scshape Abhinav Gupta} \\ \vspace{1pt}
+    \small New York, NY $|$ 
+    \href{mailto:ag10706@nyu.edu}{\underline{ag10706@nyu.edu}} $|$ 
+    \href{https://linkedin.com/in/abg0148}{\underline{linkedin.com/in/abg0148}} $|$
+    \href{https://github.com/abg0148}{\underline{github.com/gptabhinav}}
+\end{center}
+% END_TAG: header
+
+% TAG: education
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {New York University}{New York, NY}
+      {Master of Science in Computer Science}{Expected Graduation: May 2026}
+    \resumeSubheading
+      {Thapar Institute of Engineering and Technology}{India}
+      {Bachelor of Engineering in Electronics and Communication}{Aug 2016 - July 2020}
+  \resumeSubHeadingListEnd
+% END_TAG: education
+
+
+% TAG: skills
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming \& Scripting}{: Python, C++, Java, Scala, SQL, HTML, CSS} \\
+     \textbf{Machine Learning \& AI}{: PyTorch, TensorFlow, scikit-learn, HuggingFace Transformers, LLMs, LoRA, LangChain, LangGraph, RAG, Vector DBs, ANN Search (HNSW, DiskANN, NSG, HCNNG, Parlay), OpenCV, YOLO} \\
+     \textbf{Data \& Backend Systems}{: Apache Spark, Hadoop, ETL/ELT pipelines, REST/gRPC/GraphQL APIs, Distributed Systems} \\
+     \textbf{Databases \& Cloud}{: Postgres, Snowflake, MongoDB, ChromaDB, Apache Airflow, DataHub, Kafka, AWS (EC2, S3, Lambda, DynamoDB, Elasticsearch, CloudWatch, CloudFormation), GCP, Docker, Kubernetes, Unix/Linux, Database Modelling, Schema Design}
+    }}
+ \end{itemize}
+% END_TAG: skills
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+% TAG: experience_research
+    \resumeSubheading
+        {New York University}{New York, NY}
+        {Research Assistant}{May 2025 -- Present}
+        \resumeItemListStart
+          \resumeItem{Working on an ongoing paper to improve navigability in vector databases for ANN search, which enhances the recall-latency trade-off in vector databases.}
+          \resumeItem{Wrote a \underline{\href{https://github.com/gptabhinav/vamana}{high-performance C++ implementation}} of HNSW and Vamana, using SIMD vectorization and OpenMP to optimize ANN experiments, achieving state-of-the-art construction of 1M-point datasets in under 7 mins with 8 threads.}
+        \resumeItemListEnd
+% END_TAG: experience_research
+      
+% -----------Multiple Positions Heading-----------
+  %  \resumeSubSubheading
+  %   {Software Engineer I}{Oct 2014 - Sep 2016}
+  %   \resumeItemListStart
+  %      \resumeItem{Apache Beam}
+  %        {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+  %   \resumeItemListEnd
+  %  \resumeSubHeadingListEnd
+% -------------------------------------------
+
+% TAG: experience_blackrock
+% -----------Multiple Positions-----------
+    \resumeSubheading
+        {BlackRock}{Gurugram, India}
+        {Senior Data Engineer}{Jan. 2023 – June 2024}
+        \resumeItemListStart
+          \resumeItem{Designed and deployed end-to-end Python backend APIs for time series ingestion and registration, migrating the metadata store from Snowflake to DataHub to support the next-generation enterprise metadata catalog.}
+          \resumeItem{Designed Snowflake data warehouse schemas and data models for downstream analytics and reporting, improving query performance and reducing ETL complexity for 100+ workflows.}
+          \resumeItem{Led development of bulk ticker ingestion pipelines using Postgres to onboard over 19k+ tickers for Haver's G10 dataset, enabling the first private preview of BlackRock’s Quant SDK product.}
+          \resumeItem{Collaborated cross-functionally to deliver liquidity data, managing ETL priority queues, meeting customer needs by ensuring timely data delivery, and effectively handling stakeholder communication.}
+        \resumeItemListEnd
+
+      \resumeSubSubheading
+        {Data Engineer}{July 2020 – Dec. 2022}
+        \resumeItemListStart
+          \resumeItem{Built scalable ingestion platforms on Snowflake to support model feed growth, enhancing onboarding speed for various modeling teams.}
+          \resumeItem{Optimized ETL processes using Python and Scala to efficiently handle TBs of daily data, reducing peak resource utilization.}
+          \resumeItem{Migrated ETL job orchestration from legacy systems to Airflow, reducing failures by 25\% and improving system monitoring.}
+        \resumeItemListEnd
+
+      \resumeSubSubheading
+        {Intern}{Jan. 2020 – July 2020}
+        \resumeItemListStart
+          \resumeItem{Created a Python Flask server to automate file-triggered ETL jobs, accelerating data processing times.}
+          \resumeItem{Developed APIs using gRPC, Protocol Buffers, and GraphQL, optimizing service-to-service communication in scalable solutions.}
+        \resumeItemListEnd
+% END_TAG: experience_blackrock
+
+  \resumeSubHeadingListEnd
+
+% TAG: projects
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\underline{\href{https://github.com/gptabhinav/baseball_predictions}{\textbf{Probabilistic Baseball Trajectory Estimation}}} $|$ \emph{YOLOv4, OpenCV, PyTorch, TensorFlow}}{November 2025}
+          \resumeItemListStart
+            \resumeItem{Engineered a computer vision pipeline to predict baseball trajectories from MLB video, leveraging object detection, multi-frame tracking, and Kalman Filter–based state estimation for handling uncertainty.}
+            \resumeItem{Trained and deployed a custom YOLOv4 strike-zone detection model, publicly released on Roboflow, with 98\%+ recall, precision, and mAP@50, to enhance accessibility and usability.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\underline{\href{https://github.com/gptabhinav/PinBoard/tree/release}{\textbf{Pinboard}}} $|$ \emph{Flask, PostgreSQL, Data Modelling}}{April 2025}
+          \resumeItemListStart
+            \resumeItem{Designed and implemented a Pinterest-style discovery engine, focusing on efficient database modeling and schema design for complex entities.}
+            \resumeItem{Built features like repinning, liking, commenting, follow streams for personalized feeds and soft deletion to maintain data integrity.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\underline{\href{https://github.com/saiharshavarma/Big-Data-Project}{\textbf{FunnelPulse}}} $|$ \emph{PySpark, Apache Kafka, GCP, Streamlit}}{November 2025}
+          \resumeItemListStart
+            \resumeItem{Built a real-time streaming pipeline on GCP using Dataproc and Kafka, processing 8.7M+ e-commerce events to monitor conversion funnels and implementing a Lakehouse architecture for efficient data management.}
+            \resumeItem{Implemented Z-score-based anomaly detection with an LSTM Autoencoder and Prophet, enhancing changepoint detection to handle cyclic patterns in conversion data.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+    {\underline{\href{https://drive.google.com/file/d/1V_ZcGUR56WAXpPPX14h_s3qBhWhWuvLB/view?usp=sharing}{\textbf{Indexing for Scalable Sparse Neural Retrieval Systems}}}}{}
+    \resumeItemListStart
+        \resumeItem{Evaluated static pruning and tiering strategies on pruned DeepImpact indexes, improving retrieval latency on MS MARCO while preserving ranking quality.}
+    \resumeItemListEnd
+    \resumeProjectHeading
+        {\underline{\href{https://github.com/abg0148/CodeGuardian_Local_AI}{\textbf{CodeGuardian}}} $|$ \emph{RAG, Static Analysis, On-Device Security}}{}
+    \resumeItemListStart
+            \resumeItem{Developed an on-device vulnerability analysis tool combining static scanning with an LLM-powered RAG pipeline, producing interactive reports and chatbot-style explanations of risks in large codebases.}
+    \resumeItemListEnd
+
+\resumeProjectHeading
+    {\underline{\href{https://github.com/abg0148/SmartPhotoAlbum}{\textbf{Smart Photo Album}}} $|$ \emph{AWS Rekognition, ElasticSearch, AWS Lex}}{}
+    \resumeItemListStart
+        \resumeItem{Built a web app using AWS Rekognition and ElasticSearch for image embeddings and semantic search, integrated AWS Lex for natural language queries to organize and retrieve photos at scale.}
+    \resumeItemListEnd
+
+\resumeProjectHeading
+    {\underline{\href{https://github.com/abg0148/cloud-dining-concierge}{\textbf{Dining Concierge}}} $|$ \emph{AWS Lex, DynamoDB, SQS, Chatbot}}{}
+    \resumeItemListStart
+        \resumeItem{Implemented a serverless restaurant recommendation chatbot using Amazon Lex, DynamoDB, and SQS, enabling scalable intent handling and automated email notifications.}
+    \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+% END_TAG: projects
+
+%-------------------------------------------
+\end{document}
